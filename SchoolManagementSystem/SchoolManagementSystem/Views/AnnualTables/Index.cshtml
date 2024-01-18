@@ -1,0 +1,75 @@
+﻿@model IEnumerable<DatabaseAccess.AnnualTable>
+
+@{
+    ViewBag.Title = "Promote Fee";
+}
+    <p>
+        @Html.ActionLink("New Annual / Promote Fee", "Create", null, new { @class = "btn btn-success" })
+    </p>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">All Annual/ Promate Fees</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                Annual/ Promote Fees
+                            </th>
+                            <th>
+                                Program
+                            </th>
+                            <th>
+                                Details
+                            </th>
+                            <th>
+                                Fee's
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                            <th>
+                                User
+                            </th>
+                            <th>
+                            Actions
+                            </th>
+                        </tr>
+                        </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Title)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProgramTable.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Description)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Fees)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IsActive)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UserTable.FullName)
+                                </td>
+                                <td class="btn-group">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.AnnualID }, new { @class = "btn btn-primary" })
+                                    @Html.ActionLink("Details", "Details", new { id = item.AnnualID }, new { @class = "btn btn-info" })
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.AnnualID }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>

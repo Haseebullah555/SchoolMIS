@@ -1,0 +1,10 @@
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\DatabaseAccess.dll.config
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\DatabaseAccess.dll
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\EntityFramework.dll
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\EntityFramework.xml
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\obj\Debug\DatabaseAccess.dll
+c:\users\hshirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
+C:\Users\HShirzad\onedrive\documents\visual studio 2017\Projects\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache

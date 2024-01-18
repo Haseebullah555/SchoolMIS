@@ -1,0 +1,66 @@
+﻿@model DatabaseAccess.AnnualTable
+
+@{
+    ViewBag.Title = "Annual Fee";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Annual Fee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Annual/ Promote Fee
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            Program
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgramTable.Name)
+        </dd>
+        <dt>
+            Detials
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            Fee's
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fees)
+        </dd>
+
+        <dt>
+            Status
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+
+        <dt>
+            User
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserTable.FullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AnnualID }, new { @class = "btn btn-primary"})
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+</p>

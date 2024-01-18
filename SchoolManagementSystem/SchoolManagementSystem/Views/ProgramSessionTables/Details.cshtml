@@ -1,0 +1,67 @@
+﻿@model DatabaseAccess.ProgramSessionTable
+
+@{
+    ViewBag.Title = "Program Session Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Program Session</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Session
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SessionTable.Name)
+        </dd>
+        <dt>
+            Program
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgramTable.Name)
+        </dd>
+
+        <dt>
+            Details
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Details)
+        </dd>
+
+        <dt>
+            Registration
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegDate)
+        </dd>
+
+        <dt>
+            Description
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+
+
+        <dt>
+            User
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserTable.FullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProgramSessionID },new { @class = "btn btn-primary"})
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-default"})
+</p>
